@@ -1,0 +1,49 @@
+Murad Bank App
+
+1-> Müşteri
+id(tckn)
+ad
+doğumYılı
+şehir
+adres
+
+2->Hesap
+id
+customerID
+balance
+şehir
+para birimi
+
+Müşteri CRUD*CustomerAPI-->> Application Programming InterFace
+
+-Create,read,Uptade,Delete
+
+Hesap CRUD-AccountAPI -->> Application Programming InterFace
+
+Create,Red,Uptade,Delete
+para Çekme
+Para ekleme
+           
+Alice ---->>>>API---->>>>SERVİCE----->>>H2 DATABASE
+
+                   HTTP Request      <<< --------
+
+HTTP REQUEST TYPES
+
+GET-> VERİ ALMA REQUEST--->>200 -->>OK
+POST-->>VERİ EKLEME İSTEĞİ ---->>202--->>CREATED
+PUT----->>>>VERİ GÜNCELLEME
+DELETE---->>>VERİ SİLME
+
+H2 DATABASE 
+
+  ------------------------------------- ------------------------------------------
+Controller----API             -->>Controller Dto yu kullaraka service ile konuşur 
+     Dto ---Data Transfer Object 
+
+Service
+
+
+Repository     -->>Repository Modeli kulanarak Database ile konuşur
+       Model 
+DATABASE
